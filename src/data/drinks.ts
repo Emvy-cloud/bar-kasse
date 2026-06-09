@@ -1,0 +1,88 @@
+import { Drink } from "@/types/drink"
+
+export const drinks: Drink[] = [
+  {
+    id: 1,
+    name: "Vodka Cola",
+    price: 500,
+    deposit: 200,
+    color: "bg-orange-300",
+  },
+  {
+    id: 2,
+    name: "Vodka-E",
+    price: 500,
+    deposit: 200,
+    color: "bg-orange-300",
+  },
+  {
+    id: 3,
+    name: "Vodka Lemon",
+    price: 500,
+    deposit: 200,
+    color: "bg-orange-300",
+  },
+  {
+    id: 4,
+    name: "Cuba",
+    price: 600,
+    deposit: 200,
+    color: "bg-lime-300",
+  },
+  {
+    id: 5,
+    name: "Sarti",
+    price: 600,
+    deposit: 200,
+    color: "bg-lime-300",
+  },
+  {
+    id: 6,
+    name: "Aperol",
+    price: 600,
+    deposit: 200,
+    color: "bg-lime-300",
+  },
+  {
+    id: 7,
+    name: "Sprite",
+    price: 300,
+    deposit: 200,
+    color: "bg-blue-300",
+  },
+  {
+    id: 8,
+    name: "Cola",
+    price: 300,
+    deposit: 200,
+    color: "bg-blue-300",
+  },
+  {
+    id: 9,
+    name: "Fanta",
+    price: 300,
+    deposit: 200,
+    color: "bg-blue-300",
+  },
+  {
+    id: 10,
+    name: "Wasser",
+    price: 100,
+    deposit: 200,
+    color: "bg-red-300",
+  },
+  {
+    id: 11,
+    name: "Ipanema",
+    price: 350,
+    deposit: 200,
+    color: "bg-red-300",
+  },
+  {
+    id: 12,
+    name: "Cuddle",
+    price: 400,
+    deposit: 200,
+    color: "bg-red-300",
+  },
+]
