@@ -1,0 +1,9 @@
+{
+  "name": "Bar Kasse",
+  "short_name": "Kasse",
+  "description": "Kassensystem für Veranstaltungen",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}
