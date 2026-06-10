@@ -85,9 +85,9 @@ export default function Home() {
   const change = receivedMoneyValue - finalTotal
 
   return (
-    <main className="flex h-screen bg-gray-100">
-      <div className="w-3/4 p-4">
-        <div className="grid grid-cols-3 gap-6">
+    <main className="flex h-screen overflow-hidden bg-gray-100">
+      <div className="w-3/4 overflow-y-auto p-4">
+        <div className="grid grid-cols-3 gap-4">
           {drinks.map((drink) => (
             <DrinkButton
               key={drink.id}
@@ -101,12 +101,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-1/4 border-l bg-white p-4 flex flex-col gap-4">
-        <div className="text-5xl font-bold">
+      <div className="w-1/4 border-l bg-white p-3 flex flex-col gap-2 overflow-y-auto min-h-0">
+        <div className="text-4xl font-bold">
           {(finalTotal / 100).toFixed(2)}€
         </div>
 
-        <div className="text-lg text-gray-600">
+        <div className="text-sm text-gray-600">
           Brutto: {(total / 100).toFixed(2)}€
           <br />
           - Pfand: {(deposit / 100).toFixed(2)}€
@@ -114,9 +114,9 @@ export default function Home() {
 
         <Numpad onNumberClick={addNumber} onClear={clearNumber} />
 
-        <div className="text-3xl">Erhalten: {receivedMoney}€</div>
+        <div className="text-2xl">Erhalten: {receivedMoney}€</div>
 
-        <div className="rounded-2xl bg-green-300 p-6 text-4xl font-bold">
+        <div className="rounded-2xl bg-green-300 p-3 text-2xl font-bold">
           Rückgeld:
           <br />
           {(change / 100).toFixed(2)}€
@@ -124,21 +124,21 @@ export default function Home() {
 
         <button
           onClick={addDeposit}
-          className="rounded-2xl bg-yellow-300 p-6 text-2xl font-bold hover:bg-yellow-400 transition"
+          className="rounded-2xl bg-yellow-300 p-3 text-xl font-bold hover:bg-yellow-400 transition"
         >
           - Pfand
         </button>
 
         <button
           onClick={undoLast}
-          className="rounded-2xl bg-red-400 p-6 text-3xl font-bold text-white hover:bg-red-500 transition"
+          className="rounded-2xl bg-red-400 p-3 text-xl font-bold text-white hover:bg-red-500 transition"
         >
           Storno
         </button>
 
         <button
           onClick={newOrder}
-          className="rounded-2xl bg-blue-400 p-6 text-3xl font-bold text-white hover:bg-blue-500 transition"
+          className="rounded-2xl bg-blue-400 p-3 text-xl font-bold text-white hover:bg-blue-500 transition"
         >
           Neuer Vorgang
         </button>

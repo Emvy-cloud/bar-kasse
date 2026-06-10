@@ -15,7 +15,7 @@ export default function Numpad({
         <button
           key={num}
           onClick={() => onNumberClick(num)}
-          className="h-24 rounded-xl bg-gray-200 text-3xl"
+          className="h-14 rounded-xl bg-gray-200 text-2xl"
         >
           {num}
         </button>
@@ -23,21 +23,21 @@ export default function Numpad({
 
       <button
         onClick={() => onNumberClick(",")}
-        className="h-24 rounded-xl bg-gray-200 text-3xl"
+        className="h-14 rounded-xl bg-gray-200 text-2xl"
       >
         ,
       </button>
 
       <button
         onClick={() => onNumberClick("0")}
-        className="h-24 rounded-xl bg-gray-200 text-3xl"
+        className="h-14 rounded-xl bg-gray-200 text-2xl"
       >
         0
       </button>
 
       <button
         onClick={onClear}
-        className="h-24 rounded-xl bg-red-300 text-3xl"
+        className="h-14 rounded-xl bg-red-300 text-2xl"
       >
         C
       </button>
