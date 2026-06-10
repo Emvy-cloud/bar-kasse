@@ -74,14 +74,14 @@ export const drinks: Drink[] = [
   {
     id: 11,
     name: "Ipanema",
-    price: 350,
+    price: 400,
     deposit: 200,
     color: "bg-red-300",
   },
   {
     id: 12,
     name: "Cuddle",
-    price: 400,
+    price: 350,
     deposit: 200,
     color: "bg-red-300",
   },
